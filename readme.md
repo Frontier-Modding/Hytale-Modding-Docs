@@ -1,5 +1,8 @@
 # Available documentation:
 
+## Development
+[Getting Started with Plugins](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/getting-started.md)
+
 ## Events:
 [List of available events (Build 12)](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events-B12.md)
 
