@@ -7,4 +7,4 @@
 [In-game Title Message](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/GUI/titles.md)
 
 ## Sounds:
-[Playing Sounds](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/sounds/readme.md)
+[Playing Sounds](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Sounds/playing-sounds.md)
