@@ -21,3 +21,11 @@ public class RunServer {
 - Then just run the file.
 
 - You can join the "Local server" within the client.
+
+## Index Server Code
+> TODO: Move to Gradle
+
+- Fetch [a fernfower build](https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/java/java-decompiler-engine/243.23654.189/java-decompiler-engine-243.23654.189.jar).
+- Decompile the jar `java -cp ./jde.jar org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler ./HytaleServer.jar ./Sources`.
+- Link the generated sources jar in IntelliJ.
+- Enjoy hacky indexed code search.
