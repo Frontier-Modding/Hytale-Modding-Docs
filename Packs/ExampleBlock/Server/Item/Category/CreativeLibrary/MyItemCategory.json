@@ -1,0 +1,16 @@
+{
+  "Icon": "Icons/ItemCategories/MyCategory.png",
+  "Order": 6,
+  "Children": [
+    {
+      "Id": "Example_Category",
+      "Name": "ui.itemcategory.example_category",
+      "Icon": "Icons/ItemCategories/My_Example_Category.png"
+    },
+	{
+      "Id": "Example_Category_Two",
+      "Name": "ui.itemcategory.example_category_two",
+      "Icon": "Icons/ItemCategories/My_Example_Category_Two.png"
+    }
+  ]
+}
