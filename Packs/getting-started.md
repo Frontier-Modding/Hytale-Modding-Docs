@@ -27,4 +27,4 @@
 3. Translation
  `./AppData/Roaming/Hytale/UserData/Packs/YourPackName/Server/Languages/es-US/items.lang`
 
-4. You can just move the ExampleMod into `./AppData/Roaming/Hytale/UserData/Packs/` , in your main menu when you click worlds and then right click any world you will see PACKS you can enable/disable them there.
+4. You can just move the ExampleMod folder into `./AppData/Roaming/Hytale/UserData/Packs/` , in your main menu when you click worlds and then right click any world you will see PACKS you can enable/disable them there.
