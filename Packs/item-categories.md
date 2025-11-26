@@ -24,8 +24,8 @@
       "Icon": "Icons/ItemCategories/My_Example_Category_Two.png"
     }
   ]
-}```
-	
+}
+```
 - Icon are the icons in the Creative Menu for your Item Categories
 - Order is the order of your Item Category in the GUI
 - Children are your "sub" Item Categories
