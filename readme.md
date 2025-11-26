@@ -4,13 +4,14 @@ Hello there! If you're here, that means you have write access and can add/modify
 Please do so, as it's very basic still! (:
 
 ## Development
-[Getting Started with Plugins](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/getting-started.md)
+- [Getting Started with Plugins](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/getting-started.md), by Darkhax, Jared & Rick
+- [Getting Started with Packs](https://github.com/Frontier-Modding/Frontier-Modding-Docs/tree/main/Packs), by Sketch Macaw
 
 ## Events:
-[List of available events (Build 14)](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events-B14.md)
+- [List of available events](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events.md), by Rick _(Last updated Build-14)_
 
 ## GUI
-[In-game Title Message](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/GUI/titles.md)
+- [In-Game Title Message](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/GUI/titles.md), by tr7zw
 
 ## Sounds:
-[Playing Sounds](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Sounds/playing-sounds.md)
+- [Playing Sounds](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Sounds/playing-sounds.md), by tr7zw
