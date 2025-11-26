@@ -57,7 +57,7 @@
   ]
 }
 ```
-- To change the blocks hitbox just the following into your Block.json :
+- To change the blocks hitbox just the following into your Block.json, replace Stairs with the desired hitbox :
 ```
 "HitboxType": "Stairs",
 ```
