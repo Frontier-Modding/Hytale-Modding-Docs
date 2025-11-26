@@ -1,0 +1,18 @@
+{
+  "Group": "ExampleMod",
+  "Name": "Example Block",
+  "Version": "1.0.0",
+  "Description": "Adds a block",
+  "Authors": [
+    {
+      "Name": "Sketch Macaw",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "website",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false
+}
