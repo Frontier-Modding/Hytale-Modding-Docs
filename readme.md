@@ -7,7 +7,7 @@ Please do so, as it's very basic still! (:
 [Getting Started with Plugins](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/getting-started.md)
 
 ## Events:
-[List of available events (Build 12)](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events-B14.md)
+[List of available events (Build 14)](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events-B14.md)
 
 ## GUI
 [In-game Title Message](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/GUI/titles.md)
