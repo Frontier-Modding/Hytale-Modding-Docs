@@ -6,3 +6,7 @@
 ## Item Categories:
 
 ### [Getting started with Item Categories](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Packs/item-categories.md#getting-started-with-item-categories)
+
+## Block Hitboxes:
+
+### [Getting started Block Hitboxes](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Packs/block-hitboxes.md#getting-started-with-item-categories)
