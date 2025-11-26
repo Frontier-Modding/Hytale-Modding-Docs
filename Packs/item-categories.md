@@ -33,10 +33,10 @@
 
 3. Add your translation into:
  `YourPackName/Server/Languages/en-US/ui.lang`
- 
+ ```
  itemcategory.example_category = Example Tab One
  itemcategory.example_category_two = Example Tab Two
- 
+ ```
 4. Add your icons into
  `YourPackName/Common/Icons/ItemCategories/MyCategory.png`
   
@@ -44,10 +44,11 @@
  `YourPackName/Server/Item/Items/your_block.json`
  
  Just include this inside your block json
+ ```
    "Categories": [
     "MyCategory.Example_Category"
   ],
-  
+  ```
   MyCategory is the main tab
   Example_Category is the sub tab
   
