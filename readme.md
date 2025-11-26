@@ -8,10 +8,13 @@ Please do so, as it's very basic still! (:
 - [Getting Started with Packs](https://github.com/Frontier-Modding/Frontier-Modding-Docs/tree/main/Packs), by Sketch Macaw
 
 ## Events:
-- [List of available events](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events.md), by Rick _(Last updated Build-14)_
+- [List of Available Events](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Events/Available-Events.md), by Rick _(Last updated Build-14)_
 
 ## GUI
 - [In-Game Title Message](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/GUI/titles.md), by tr7zw
+
+## Map Markers
+- [Automated Campfire Map Markers](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/MapMarkers/AutomatedCampfireMapMarkers.md), by tr7zw
 
 ## Sounds:
 - [Playing Sounds](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Sounds/playing-sounds.md), by tr7zw
