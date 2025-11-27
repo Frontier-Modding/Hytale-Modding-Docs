@@ -27,6 +27,6 @@
 
 5. To edit the Icon of the block shown in the GUI follow these steps:
    
-By Darkhax
+Images By Darkhax
 <img width="1270" height="730" alt="image1" src="https://github.com/user-attachments/assets/23bf00f4-5c4b-42e1-9019-071cb9a28ddb" />
 <img width="791" height="446" alt="image2" src="https://github.com/user-attachments/assets/2707b27f-76a3-4164-90a3-9561c5288ce5" />
