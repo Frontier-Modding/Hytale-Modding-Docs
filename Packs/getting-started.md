@@ -26,6 +26,7 @@
 4. You can just move the ExampleMod folder into `./AppData/Roaming/Hytale/UserData/Packs/` , in your main menu when you click worlds and then right click any world you will see PACKS you can enable/disable them there.
 
 5. To edit the Icon of the block shown in the GUI follow these steps:
+   - Open the asset editor and find your block
    
 Images By Darkhax
 <img width="1270" height="730" alt="image1" src="https://github.com/user-attachments/assets/23bf00f4-5c4b-42e1-9019-071cb9a28ddb" />
