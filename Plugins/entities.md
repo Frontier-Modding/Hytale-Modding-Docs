@@ -54,20 +54,16 @@ To actually add new behavior to the entity, an entity system must be added. A qu
 public class CosinusSystem extends EntityTickingSystem<EntityStore> {
     private static final Query<EntityStore> QUERY = PluginExample.getInstance().getCosineComponentType();
 
-    public void tick(float dt, int index, @Nonnull ArchetypeChunk archetypeChunk, @Nonnull Store store, @Nonnull CommandBuffer commandBuffer) {
-        CosineComponent cosineComponent = (CosineComponent) archetypeChunk.getComponent(index, PluginExample.getInstance().getCosineComponentType());
-        TransformComponent transform = (TransformComponent) archetypeChunk.getComponent(index, TransformComponent.getComponentType());
+
+    @Override
+    public void tick(float dt, int index, @Nonnull ArchetypeChunk<EntityStore> archetypeChunk, @Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> commandBuffer) {
+        CosineComponent cosineComponent = archetypeChunk.getComponent(index, PluginExample.getInstance().getCosineComponentType());
+        TransformComponent transform = archetypeChunk.getComponent(index, TransformComponent.getComponentType());
 
         double v = cosineComponent.getStrength() + dt;
         cosineComponent.setStrength(v);
 
-        transform.setPosition(
-                transform.getPosition().add(
-                        0,
-                        Math.cos(v) * 0.1,
-                        0
-                )
-        );
+        transform.setPosition(transform.getPosition().add(0, Math.cos(v) * 0.1, 0));
     }
 
     @Nullable
