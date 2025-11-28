@@ -1,19 +1,16 @@
 # Entities
 
-> Under research
+> Under research, chaos ahead
 
 Entities are `Holder<EntityStore>` with several components attached to them.
 For example, the following code adds a Minecart.
 
 ```java
-    protected void execute(@Nonnull CommandContext context, @Nonnull Store<EntityStore> store, @Nonnull Ref<EntityStore> var3, @Nonnull PlayerRef ref, @Nonnull World var5) {
-        Ref<EntityStore> reference = ref.getReference();
-        TransformComponent component = store.getComponent(reference, TransformComponent.getComponentType());
-
+    protected void spawn(Store<EntityStore> store) {
         // Create a blank entity
         Holder<EntityStore> holder = EntityStore.REGISTRY.newHolder();
 
-        Vector3d position = component.getPosition();
+        Vector3d position = new Vector3f(); // E.g. at the executing players position
         Vector3f rotation = new Vector3f();
         holder.addComponent(TransformComponent.getComponentType(), new TransformComponent(position, rotation));
         holder.ensureComponent(UUIDComponent.getComponentType());
@@ -49,11 +46,12 @@ public class CosineComponent implements Component<EntityStore> {
 ...
 ```
 
-To actually add new behavior to the entity, an entity system must be added. A query tests against the existence of required components. Here, an entity ticker is used to move the Entity around.
+To actually add new behavior to the entity, an entity system must be added.
+A query tests against the existence of required components.
+Here, an entity ticker is used to move the Entity around.
 ```java
 public class CosinusSystem extends EntityTickingSystem<EntityStore> {
     private static final Query<EntityStore> QUERY = PluginExample.getInstance().getCosineComponentType();
-
 
     @Override
     public void tick(float dt, int index, @Nonnull ArchetypeChunk<EntityStore> archetypeChunk, @Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> commandBuffer) {
