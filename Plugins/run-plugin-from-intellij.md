@@ -31,6 +31,7 @@ tasks.register('run', JavaExec) {
     mainClass = 'net.conczin.RunServer'
     classpath = sourceSets.main.runtimeClasspath
     workingDir = file('run') // The server will generate a bunch of files, let's not muddy the project root.
+    standardInput = System.in
 }
 ```
 
