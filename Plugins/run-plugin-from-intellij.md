@@ -6,21 +6,33 @@ You can use the following (janky) way to launch the server from IntelliJ.
 
 ```
 public class RunServer {
-    public static void main(String[] args) throws IOException {
-       com.hypixel.hytale.Main.main(
-               new String[]{"--allow-op",
-               "--assets=C:\\Users\\<user>\\AppData\\Roaming\\Hytale\\install\\release\\package\\game\\build-11\\Assets",
-               "--packs=C:\\Users\\<user>\\AppData\\Roaming\\Hytale\\UserData\\Packs"}
-       );
+    static void main() throws IOException {
+        com.hypixel.hytale.Main.main(
+                new String[]{
+                        "--allow-op",
+                        "--disable-sentry",
+                        "--assets=C:\\Users\\<user>\\AppData\\Roaming\\Hytale\\install\\release\\package\\game\\latest\\Assets",
+                        "--packs=C:\\Users\\<user>\\AppData\\Roaming\\Hytale\\UserData\\Packs"
+                }
+        );
     }
 }
 ```
 
-- Make sure `<user>` is your username and the `build-11` is updated to the build you're on.
+- Make sure `<user>` is your username.
 
 - Then just run the file.
 
 - You can join the "Local server" within the client.
+
+Optionally add a Gradle run task:
+```gradle
+tasks.register('run', JavaExec) {
+    mainClass = 'net.conczin.RunServer'
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = file('run') // The server will generate a bunch of files, let's not muddy the project root.
+}
+```
 
 ## Index Server Code
 > TODO: Move to Gradle
