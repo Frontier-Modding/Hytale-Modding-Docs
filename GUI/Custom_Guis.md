@@ -65,11 +65,11 @@ public class AdvancedItemInfo extends InteractiveCustomUIPage<AdvancedItemInfo.S
              * 
              * The set method allows you to modify properties of the element (the properties are explained in the UI Docs)
              * 
-             * This selector is used to modify the text of the tooltip when hovering the main element `#SubcommandCards[x][y].TooltipText`
+             * This selector is used to modify the text of the tooltip when hovering the main element `#SubcommandCards[y][x].TooltipText`
              */
             commandBuilder.set("#SubcommandCards[" + rowIndex + "][" + cardsInCurrentRow + "].TooltipText", tooltip);
             /**
-             * This selector modifies a child element of #SubcommandCards[x][y]. #ItemIcon is a child element of #SubcommandCards[x][y] and its modifying the value of ItemId
+             * This selector modifies a child element of #SubcommandCards[y][x]. #ItemIcon is a child element of #SubcommandCards[y][x] and its modifying the value of ItemId
              */
             commandBuilder.set("#SubcommandCards[" + rowIndex + "][" + cardsInCurrentRow + "] #ItemIcon.ItemId", entry.getKey());
             commandBuilder.set("#SubcommandCards[" + rowIndex + "][" + cardsInCurrentRow + "] #ItemName.TextSpans", Message.translation(subcommand.getTranslationKey()));
