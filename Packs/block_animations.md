@@ -22,7 +22,11 @@ First you need to edit your blockstate "State", add the desired animation.
    You can see that in "nodeAnimations" there is "Water", that is the name of the group in the model which the animation will apply to
    The only thing changing here is the position of the Y of the model.
    This will make the elements inside the "Water" folder in your model change position, so they will go up by 8.5
- 
+
+ Position : Will change the position of elements
+ Orientation : Will change the rotation of elements
+ ShapeStretch : Will stretch the elements
+ ShapeVisible : If the shape is hidden or not
  
 ```
 {
