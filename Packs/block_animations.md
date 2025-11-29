@@ -24,8 +24,11 @@ First you need to edit your blockstate "State", add the desired animation.
    This will make the elements inside the "Water" folder in your model change position, so they will go up by 8.5
 
  Position : Will change the position of elements
+ 
  Orientation : Will change the rotation of elements
+ 
  ShapeStretch : Will stretch the elements
+ 
  ShapeVisible : If the shape is hidden or not
  
 ```
