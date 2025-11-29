@@ -23,6 +23,9 @@ I haven't tried adding a custom one yet, so I will show you the ChestConnectedBl
 There are set rules for templates that need to match so the block changes, this is used for chests when you place two of the same, next of each other
 they will connect to form the large chest.
 
+This will copy the facing of the already placed down block
+- "TransformRulesToPlacedOrientation": true, 
+
 ```
 {
     "MaterialName":"Chest",
