@@ -64,3 +64,58 @@ This will copy the facing of the already placed down block
 }
 
 ```
+
+- Here is one which changes a single block into a tall block if placed above the same one, with the shapes Base and Top
+
+```
+{
+    "MaterialName":"Tall",
+    "ConnectsToOtherMaterials":true,
+    "DefaultShape": "Base",
+    "Shapes":{
+        "Base":{
+            "FaceTags": {
+                "Up": ["Tall"],
+                "Down": ["Tall"]
+            },
+            "PatternsToMatchAnyOf": [
+                {
+                    "Type": "Custom",
+					"TransformRulesToPlacedOrientation": true,
+                    "RulesToMatch":[
+                        {
+                            "Position":{ "X":0, "Y":-1, "Z":0 },
+                            "IncludeOrExclude":"Exclude",
+                            "FaceTags": {
+                                "Down": ["Tall"]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "Top":{
+            "FaceTags": {
+                "Up": ["Tall"],
+                "Down": ["Tall"]
+            },
+            "PatternsToMatchAnyOf": [
+                {
+                    "Type": "Custom",
+					"TransformRulesToPlacedOrientation": true,
+                    "RulesToMatch":[
+                        {
+                            "Position":{ "X":0, "Y":1, "Z":0 },
+                            "IncludeOrExclude":"Include",
+                            "FaceTags": {
+                                "Up": ["Tall"]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        
+    }
+}
+```
