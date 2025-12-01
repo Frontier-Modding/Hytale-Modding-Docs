@@ -41,11 +41,21 @@
       "Definitions": {
         "On": {
 		  "InteractionHint": "interactionHints.turnoff",
-		  "CustomModel": "Blocks/model_one.blockymodel"
+		  "CustomModel": "Blocks/model_one.blockymodel",
+			"CustomModelTexture": [
+            {
+              "Texture": "Blocks/Texture/textureone.png"
+            }
+          ]
         },
         "Off": {
           "InteractionHint": "interactionHints.turnon",
-		  "CustomModel": "Blocks/model_two.blockymodel"
+		  "CustomModel": "Blocks/model_two.blockymodel",
+			"CustomModelTexture": [
+            {
+              "Texture": "Blocks/Texture/textureone.png"
+            }
+          ]
         }
       }
     }
