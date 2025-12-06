@@ -20,7 +20,7 @@ public class CustomAsset implements JsonAssetWithMap<String, DefaultAssetMap<Str
             .afterDecode((o, extrainfo) -> {
                 if (o.id != null && extrainfo instanceof AssetExtraInfo<?> assetExtraInfo) {
                     Path path = assetExtraInfo.getAssetPath();
-                    // Here you can add additional post processing, including things like loading auxilary/non-json files
+                    // Here you can add additional post processing, including things like loading auxiliary/non-json files
                 }
             })
             .build();
@@ -41,6 +41,7 @@ public class CustomAsset implements JsonAssetWithMap<String, DefaultAssetMap<Str
 ```
 
 Register it in your setup:
+
 ```java
 AssetRegistry.register(HytaleAssetStore.builder(CustomAsset.class, new DefaultAssetMap<>())
         .setPath("DirectoryName/Can/Be/Nested")
