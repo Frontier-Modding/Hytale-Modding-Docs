@@ -23,7 +23,7 @@ Please do so, as it's very basic still! (:
 
 ## Events:
 
-- [List of Available Events](Events/Available-Events.md), by Rick _(Last updated Build-14)_
+- [List of Available Events](Events/Available-Events.md), by Rick, updated by Darkhax (pre-19, release-31)
 
 ## GUI
 
