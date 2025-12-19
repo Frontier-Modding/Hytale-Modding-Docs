@@ -1,37 +1,71 @@
-## A list of events you can subscribe to:
-### Last updated for build-14
+> **⚠️ Warning: Early Access**
+> The event system in Hytale is still under development. Stuff is being moved around regularly,
+> and many things are deprecate, or intended for removal!
 
-```
-BootEvent
-PrepareUniverseEvent                         (*Deprecated)
-ShutdownEvent
+## IAsyncEvent
+- AssetEditorFetchAutoCompleteDataEvent
+- AssetEditorRequestDataSetEvent
+- PlayerChatEvent
+- SendCommonAssetsEvent
 
-entity - EntityEvent                         (*Raw)
-entity - EntityRemoveEvent
-entity - LivingEntityBreakBlockEvent
-entity - LivingEntityDamageBlockEvent
-entity - LivingEntityInventoryChangeEvent
-entity - LivingEntityPickupItemEvent         (*Deprecated)
-entity - LivingEntityPlaceBlockEvent
-entity - LivingEntitySwitchActiveSlotEvent
-entity - LivingEntityUseBlockEvent
-
-player - AddPlayerToWorldEvent
-player - DrainPlayerFromWorldEvent
-player - PlayerChangeGameModeEvent
-player - PlayerChatEvent
-player - PlayerConnectEvent
-player - PlayerCraftEvent
-player - PlayerDisconnectEvent
-player - PlayerDropItemEvent
-player - PlayerEvent                          (*Raw)
-player - PlayerInteractEvent                  (*Deprecated)
-player - PlayerMouseButtonEvent
-player - PlayerMouseMotionEvent
-player - PlayerPingEvent
-player - PlayerReadyEvent
-player - PlayerRefEvent                       (*Raw)
-player - PlayerSetupConnectEvent
-player - PlayerSetupDisconnectEvent
-player - RemovePlayerFromWorldEvent
-```
+## IEvent
+- AddPlayerToWorldEvent
+- AllNPCsLoadedEvent
+- AllWorldsLoadedEvent
+- AssetMonitorEvent
+  - AssetStoreMonitorEvent
+  - CommonAssetMonitorEvent
+- AssetPackRegisterEvent
+- AssetPackUnregisterEvent
+- AssetStoreEvent
+  - RegisterAssetStoreEvent
+  - RemoveAssetStoreEvent
+- AssetsEvent
+  - GenerateAssetsEvent
+  - LoadedAssetsEvent
+  - RemovedAssetsEvent
+- BootEvent
+- ChunkEvent
+  - ChunkPreLoadProcessEvent
+- DrainPlayerFromWorldEvent
+- EditorClientEvent
+  - AssetEditorActivateButtonEvent
+  - AssetEditorAssetCreatedEvent
+  - AssetEditorClientDisconnectEvent
+  - AssetEditorSelectAssetEvent
+  - AssetEditorUpdateWeatherPreviewLockEvent
+- EntityEvent
+  - EntityRemoveEvent
+  - LivingEntityInventoryChangeEvent
+- GenerateDefaultLanguageEvent
+- GenerateSchemaEvent
+- GenerateServerStateEvent
+- ItemContainerChangeEvent
+- ~~LivingEntityUseBlockEvent~~ DEPRECATED
+- LoadAssetEvent
+- LoadedNPCEvent
+- MessagesUpdated
+- PlayerConnectEvent
+- PlayerEvent
+  - ~~PlayerCraftEvent~~ DEPRECATED
+  - ~~PlayerInteractEvent~~ DEPRECATED
+  - PlayerMouseButtonEvent
+  - PlayerMouseMotionEvent
+  - PlayerReadyEvent
+  - RemovePlayerFromWorldEvent
+- PlayerRefEvent
+  - PlayerDisconnectEvent
+- PlayerSetupConnectEvent
+- PlayerSetupDisconnectEvent
+- PluginEvent
+  - PluginSetupEvent
+- ~~PrepareUniverseEvent~~ DEPRECATED
+- ShutdownEvent
+- SingleplayerRequestAccessEvent
+- TreasureChestOpeningEvent
+- WindowCloseEvent
+- WorldEvent
+  - AddWorldEvent
+  - RemoveWorldEvent
+  - StartWorldEvent
+- WorldPathChangedEvent
