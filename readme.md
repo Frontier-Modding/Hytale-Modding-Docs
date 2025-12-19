@@ -7,6 +7,7 @@ Please do so, as it's very basic still! (:
 
 - [Getting Started with Plugins](Plugins/getting-started.md), by Darkhax, Jared & Rick
 - [Getting Started with Packs](Packs/readme.md), by Sketch Macaw
+- [Getting Started with EarlyPlugins & ClassTransformers](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/early-plugins.md) by Darkhax
 
 ## Config
 
