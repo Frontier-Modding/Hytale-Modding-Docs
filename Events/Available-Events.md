@@ -2,6 +2,33 @@
 > The event system in Hytale is still under development. Stuff is being moved around regularly,
 > and many things are deprecate, or intended for removal!
 
+## ECS Event
+- CancellableEcsEvent
+  - BreakBlockEvent
+  - ChangeGameModeEvent
+  - ChunkSaveEvent
+  - ChunkUnloadEvent
+  - CraftRecipeEvent
+    - Post
+    - Pre
+  - Damage
+  - DamageBlockEvent
+  - DropItemEvent
+    - Drop
+    - PlayerRequest
+  - InteractivelyPickupItemEvent
+  - PlaceBlockEvent
+  - PrefabPasteEvent
+  - SwitchActiveSlotEvent
+- DiscoverInstanceEvent
+  - Display
+- DiscoverZoneEvent
+  - Display
+- MoonPhaseChangeEvent
+- UseBlockEvent
+  - Post
+  - Pre
+ 
 ## IAsyncEvent
 - AssetEditorFetchAutoCompleteDataEvent
 - AssetEditorRequestDataSetEvent
