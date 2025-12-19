@@ -1,37 +1,43 @@
-## Launch the server with your plugin from IntelliJ
+# Running the Server within IntelliJ IDEA
 
-You can use the following (janky) way to launch the server from IntelliJ.
+## Gradle Approach
+If you are using the [template](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/getting-started.md), a `HytaleServer` run configuration should be generated for you automatically. If you do not want to use the template, you can replicate the templates approach by copying the following and modifying it to suit your needs.
 
-- Create a class file with the following:
+Add the idea-ext plugin to your buildscript.
 
-```
-public class RunServer {
-    static void main() throws IOException {
-        com.hypixel.hytale.Main.main(
-                new String[]{
-                        "--allow-op",
-                        "--disable-sentry",
-                        "--assets=C:\\Users\\<user>\\AppData\\Roaming\\Hytale\\install\\release\\package\\game\\latest\\Assets",
-                        "--packs=C:\\Users\\<user>\\AppData\\Roaming\\Hytale\\UserData\\Packs"
-                }
-        );
-    }
+```groovy
+plugins {
+    id 'java'
+    id 'org.jetbrains.gradle.plugin.idea-ext' version '1.3'
 }
 ```
 
-- Make sure `<user>` is your username.
+Locate the Hytale install directory.
+```groovy
+ext {
+    hytaleHome = "${System.getProperty("user.home")}/AppData/Roaming/Hytale/install"
+}
+```
 
-- Then just run the file.
+Generate the working directory.
 
-- You can join the "Local server" within the client.
+```groovy
+def serverRunDir = file("$projectDir/run")
+if (!serverRunDir.exists()) {
+    serverRunDir.mkdirs()
+}
+```
 
-Optionally add a Gradle run task:
-```gradle
-tasks.register('run', JavaExec) {
-    mainClass = 'net.conczin.RunServer'
-    classpath = sourceSets.main.runtimeClasspath
-    workingDir = file('run') // The server will generate a bunch of files, let's not muddy the project root.
-    standardInput = System.in
+Add a new run configuration using the plugin.
+
+```groovy
+idea.project.settings.runConfigurations {
+    'HytaleServer'(org.jetbrains.gradle.ext.Application) {
+        mainClass = 'com.hypixel.hytale.Main'
+        moduleName = project.idea.module.name + '.main'
+        programParameters = "--allow-op --disable-sentry --assets=$hytaleHome/$patchline/package/game/latest/Assets.zip"
+        workingDirectory = serverRunDir.absolutePath
+    }
 }
 ```
 
