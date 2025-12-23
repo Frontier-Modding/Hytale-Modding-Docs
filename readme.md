@@ -17,6 +17,7 @@ Please do so, as it's very basic still! (:
 ## Data
 
 - [Custom Asset Stores](Data/data.md)
+- [Universe Storage](Data/resources.md)
 
 # Entities
 
