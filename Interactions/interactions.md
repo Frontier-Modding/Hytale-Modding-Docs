@@ -9,6 +9,10 @@ Interactions are called in various places, such as tool/weapon behavior.
 Interactions extend from Simple(Instant)Interaction.
 Notice that custom interactions can only be server-sided; packets like ProjectileInteraction rely on the hardcoded client/protocol.
 
+## Create Interaction Assets
+
+Using the Asset Editor you will need to create a new Interactions for the type `Utterance` (the same as the codec) and RootInteraction referencing the new Interaction.
+
 ```java
 public class UtteranceInteraction extends SimpleInstantInteraction {
     // Here we add a single config to store additional data, where UtteranceConfig is a Codec extending from NetworkSerializable.
