@@ -2,7 +2,7 @@
 
 ## 1. Download the IDEA Template
 The easiest way to start developing plugins is by downloading the template from Darkhax & Jared. 
-- [Zip File](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/_Files/Hytale-Example-Project-plugin-34d3b23.zip)
+- [Zip File](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/_Files/Hytale-Example-Project-plugin-84eadab.zip)
 - [GitHub Repo](https://github.com/Darkhax/Hytale-Example-Project) - Currently Private
 
 The plugin has many great features such as:
@@ -31,7 +31,7 @@ This is pretty straight forward, open the template folder in IDEA to load and in
 
 - To build a sharable version of your plugin run `gradle build`. The plugin JAR file will be in `builds/libs`.
 - A run configuration to launch the game will be added for you. It's called `HytaleServer`.
-- Plugins can be installed by placing them in `%appdata%/Hytale/UserData/Plugins`, if the folder doesn't exist you can make it.
+- Plugins can be installed by placing them in `%appdata%/Hytale/UserData/Mods`, if the folder doesn't exist you can make it.
 
 ## 5. Source Code
 While IDEA will allow you to view decompiled classes, some features like indexing and find usages are severely limited without attaching sources. In the future, Hytale will provide sources for us, but for now you must generate them yourself. The easiest way to do this is with [VineFlower](https://vineflower.org/). The tool is pretty simple to use, just run `java -jar vineflower.jar ./HytaleServer.jar ./HytaleServer-src.zip` in the same folder as your HytaleServer.jar file.
