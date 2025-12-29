@@ -4,7 +4,7 @@ Logging allows you to print messages to the log file and to the game console. Lo
 ## Getting a Logger
 
 When logging messages in Hytale, you should always use a HytaleLogger that is specific to your project. You can create a new logger that is based on the current class name, or use a custom name unique to your project.
-When logging messages in Hytale you should always use a HytaleLogger. You can use the built-in logger, or create a new logger for your plugin!
+When logging messages in Hytale you should always use a HytaleLogger.
 
 ```java
     public static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
