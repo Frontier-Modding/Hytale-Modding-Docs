@@ -1,7 +1,6 @@
 # Available documentation:
 
-Hello there! If you're here, that means you have write access and can add/modify any information that's available.\
-Please do so, as it's very basic still! (:
+Hello there! If you're here, that means you have write access and can add/modify any information that's available.
 
 ## Development
 
