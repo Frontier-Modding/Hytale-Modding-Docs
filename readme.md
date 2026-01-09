@@ -4,7 +4,8 @@ Hello there! If you're here, that means you have write access and can add/modify
 
 ## Development
 
-- [Getting Started with Plugins](Plugins/getting-started.md), by Darkhax, Jared & Rick
+- [Getting Started with Plugins, Darkhax & Jared's Plugin Template](Plugins/jarhax/getting-started.md), by Darkhax, Jared & Rick
+- [Getting Started with Plugins, Up's Plugin Template](Plugins/up/workspace-setup.md), by Up
 - [Getting Started with Packs](Packs/readme.md), by Sketch Macaw
 - [Getting Started with EarlyPlugins & ClassTransformers](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/early-plugins.md) by Darkhax
 - [Getting Started with Hyxins (Mixin)](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/hyxin-guide.md) by Darkhax

@@ -1,7 +1,7 @@
 # Running the Server within IntelliJ IDEA
 
 ## Gradle Approach
-If you are using the [template](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/getting-started.md), a `HytaleServer` run configuration should be generated for you automatically. If you do not want to use the template, you can replicate the templates approach by copying the following and modifying it to suit your needs.
+If you are using the [template by Darkhax & Jared](getting-started.md), a `HytaleServer` run configuration should be generated for you automatically. If you do not want to use the template, you can replicate the templates approach by copying the following and modifying it to suit your needs.
 
 Add the idea-ext plugin to your buildscript.
 

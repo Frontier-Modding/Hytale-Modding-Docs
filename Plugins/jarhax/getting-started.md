@@ -2,7 +2,7 @@
 
 ## 1. Download the IDEA Template
 The easiest way to start developing plugins is by downloading the template from Darkhax & Jared. 
-- [Zip File](https://github.com/Frontier-Modding/Frontier-Modding-Docs/blob/main/Plugins/_Files/Hytale-Example-Project-plugin-1fbd9d4.zip)
+- [Zip File](../_Files/Hytale-Example-Project-plugin-1fbd9d4.zip)
 - [GitHub Repo](https://github.com/Darkhax/Hytale-Example-Project) - Currently Private
 
 The plugin has many great features such as:
