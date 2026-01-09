@@ -36,7 +36,7 @@ Before opening the template, you should also make sure Hytale is installed in th
 3. Go to the `gradle.properties` file, update the project properties.
 4. Reload the gradle project via the `Gradle` tab in the top left corner of your IDE window.
 
-> ![!IMPORTANT]
+> [!IMPORTANT]
 > Since Hytale currently does not include source files, if you want full code search and IDE help, you will need to generate these yourself:
 In the gradle tab, select and run the `decompileServer` task. This might take a few minutes to complete. You can also ignore any errors it produces. Once the game is decompiled, you can open any of the game's class files such as `HytaleServer`, then at the top there should be a `Choose Sources...` button. Click this and select the `HytaleServer-src.zip` file right in the directory it opens.
 
